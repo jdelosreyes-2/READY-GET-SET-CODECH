@@ -1,7 +1,7 @@
 // Reliably trigger the visitor's default email app via dynamic anchor click
 function openEmailClient(recipient, subject, body) {
   const mailtoLink = document.createElement('a');
-  mailtoLink.href = `mailto:${hello@examplewebsite142.com}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  mailtoLink.href = `mailto:${recepient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   mailtoLink.style.display = 'none';
   document.body.appendChild(mailtoLink);
   mailtoLink.click();
